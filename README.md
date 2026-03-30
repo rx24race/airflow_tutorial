@@ -12,7 +12,8 @@ Clone and start the container as shown below:
 git clone https://github.com/josephmachado/airflow-tutorial.git
 cd airflow-tutorial
 docker compose up -d --build
+sleep 30 # wait 30 seconds for Airflow & Jupyter Notebook to start
 ```
 
-Open Airflow at [http://localhost:8080](http://localhost:8080) and stop containers after you are done with `docker compose down`.
+Open Airflow at [http://localhost:8080](http://localhost:8080) and stop containers after you are done with `docker compose down -v`.
 

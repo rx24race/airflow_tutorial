@@ -45,11 +45,6 @@ def consumer_dag():
                 print(f"    Extra                : {event.extra}")
                 print(f"    Producer DAG ID      : {event.source_dag_id}")
                 print(f"Full event detail: {event}")
-                # print(f"    data_interval_start  : {dag_run.data_interval_start}")
-                # print(f"    data_interval_end    : {dag_run.data_interval_end}")
-                # duration = (
-                #     dag_run.data_interval_end - dag_run.data_interval_start
-                # ).total_seconds()
 
     print_asset_details()
 

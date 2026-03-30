@@ -16,6 +16,7 @@ import time
     tags=["etl", "example"],
 )
 def simple_etl():
+    
     @task(owner="ExternalSystem")
     def extract() -> list[dict]:
         """Generate fake raw records."""
