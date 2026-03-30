@@ -15,5 +15,9 @@ docker compose up -d --build
 sleep 30 # wait 30 seconds for Airflow & Jupyter Notebook to start
 ```
 
-Open Airflow at [http://localhost:8080](http://localhost:8080) and stop containers after you are done with `docker compose down -v`.
+Open Airflow at [http://localhost:8080](http://localhost:8080)
+
+Open JupyterLab at [http://localhost:8888](http://localhost:8888)
+
+Stop containers after you are done with `docker compose down -v`.
 
