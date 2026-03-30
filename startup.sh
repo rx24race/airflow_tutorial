@@ -5,5 +5,10 @@ set -e
 source /home/airflow/.venv/bin/activate
 
 # Start Airflow 
-airflow standalone 
+airflow standalone  & 
+
+cd /home
+
+# Start Jupyter Lab in the foreground
+exec jupyter lab --allow-root --ip=0.0.0.0 --no-browser --IdentityProvider.token=''
 

@@ -36,6 +36,7 @@ ENV CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints
 
 RUN uv venv /home/airflow/.venv
 RUN uv pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+RUN uv pip install jupyterlab
 
 # Start Airflow Server
 COPY startup.sh /startup.sh

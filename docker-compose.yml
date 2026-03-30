@@ -9,6 +9,8 @@ services:
     container_name: airflow-tutorial
     ports:
       - "8080:8080"   # Airflow webserver
+      - "8888:8888"   # Jupyter Lab
     volumes:
       - ./airflow/dags:/home/airflow/dags
+      - ./notebooks:/home/notebooks
  
