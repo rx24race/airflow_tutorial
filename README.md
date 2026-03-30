@@ -9,7 +9,7 @@ Code for [Airflow 3.0 Tutorial](https://www.startdataengineering.com/post/airflo
 Clone and start the container as shown below: 
 
 ```bash
-git clone https://github.com/josephmachado/airlfow-tutorial.git
+git clone https://github.com/josephmachado/airflow-tutorial.git
 cd airflow-tutorial
 docker compose up -d --build
 ```
