@@ -1,10 +1,10 @@
 Code for [Airflow 3.0 Tutorial](https://www.startdataengineering.com/post/airflow-tutorial/)
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/josephmachado/airflow-tutorial)
-
-Give it a few minutes to setup and start the docker containers. 
-
-Make sure to stop your codespaces after you are done using them.
+<!---->
+<!-- [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/josephmachado/airflow-tutorial) -->
+<!---->
+<!-- Give it a few minutes to setup and start the docker containers.  -->
+<!---->
+<!-- Make sure to stop your codespaces after you are done using them. -->
 
 ## Local Setup 
 
