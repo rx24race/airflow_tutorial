@@ -16,3 +16,4 @@ services:
     environment:
       AIRFLOW__WEBSERVER__BASE_URL: "${AIRFLOW_BASE_URL:-http://localhost:8080}"
       AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX: "True"
+      AIRFLOW__CORE__INTERNAL_API_URL: "http://localhost:8080"
