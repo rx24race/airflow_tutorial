@@ -13,4 +13,6 @@ services:
     volumes:
       - ./airflow/dags:/home/airflow/dags
       - ./notebooks:/home/notebooks
- 
+    environment:
+      AIRFLOW__WEBSERVER__BASE_URL: "${AIRFLOW_BASE_URL:-http://localhost:8080}"
+      AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX: "True"
