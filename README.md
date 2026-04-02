@@ -1,4 +1,5 @@
 Code for [Airflow 3.0 Tutorial](https://www.startdataengineering.com/post/airflow-tutorial/)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/josephmachado/airflow-tutorial)
 
 ## Local Setup 
 
