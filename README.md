@@ -6,6 +6,8 @@ Code for [Airflow 3.0 Tutorial](https://www.startdataengineering.com/post/airflo
 
 1. [Docker version >= 20.10.17](https://docs.docker.com/engine/install/) and [Docker compose v2 version >= v2.10.2](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command).
 
+**Windows users**: Please use WSL and Install Ubuntu using this [document](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/#). In your ubuntu terminal install the prerequisites above.
+
 Clone and start the container as shown below: 
 
 ```bash
