@@ -12,8 +12,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     procps \
     && rm -rf /var/lib/apt/lists/*
 
+# Fix JAVA_HOME for arm64 (aarch64) vs amd64
 ARG TARGETARCH
-ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-${TARGETARCH}
+RUN case "$TARGETARCH" in \
+      arm64) JAVAARCH="aarch64" ;; \
+      *) JAVAARCH="$TARGETARCH" ;; \
+    esac && \
+    ln -s /usr/lib/jvm/java-17-openjdk-${JAVAARCH} /usr/lib/jvm/java-17-openjdk-current
+    # ^^^^ JAVAARCH is alive here, inside the same RUN block ✅
+
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-current  # fixed path, always works ✅
+
 ENV PATH=$JAVA_HOME/bin:$PATH
 
 # Install uv
