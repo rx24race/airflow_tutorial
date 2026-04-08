@@ -32,7 +32,7 @@ jobs:
 
       - name: Test JAVA_HOME is set correctly
         run: |
-          docker compose run --rm airflow-tutorial bash -c "echo JAVA_HOME=$JAVA_HOME && ls $JAVA_HOME"
+          docker compose run --rm airflow-tutorial bash -c 'echo JAVA_HOME=$JAVA_HOME && ls $JAVA_HOME'
 
       - name: Test Airflow is installed
         run: |
