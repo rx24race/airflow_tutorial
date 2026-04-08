@@ -19,9 +19,7 @@ RUN case "$TARGETARCH" in \
       *) JAVAARCH="$TARGETARCH" ;; \
     esac && \
     ln -s /usr/lib/jvm/java-17-openjdk-${JAVAARCH} /usr/lib/jvm/java-17-openjdk-current
-    # ^^^^ JAVAARCH is alive here, inside the same RUN block ✅
-
-ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-current  # fixed path, always works ✅
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-current
 
 ENV PATH=$JAVA_HOME/bin:$PATH
 
