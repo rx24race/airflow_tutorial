@@ -23,3 +23,5 @@ Open JupyterLab at [http://localhost:8888](http://localhost:8888)
 
 Stop containers after you are done with `docker compose down -v`.
 
+Help me make this better, please fill out this **[Feedback Form](https://forms.gle/NgJfNcvzEzBkZrNq5)**.
+
