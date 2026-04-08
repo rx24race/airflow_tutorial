@@ -1,17 +1,4 @@
 Code for [Airflow 3.0 Tutorial](https://www.startdataengineering.com/post/airflow-tutorial/)
-<!---->
-<!-- [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/josephmachado/airflow-tutorial) -->
-<!---->
-<!-- In GitHub Codespaces wait a few minutes, the `docker compose up -d --build` command will run automatically. -->
-<!---->
-<!-- After which wait another 2 minutes and then click on the `ports` tab and the `world` icon next to link with port 8888 to open jupyterlab in your browser. -->
-<!---->
-<!-- ![Open Port](open_port.png) -->
-<!---->
-<!-- Once you are done delete the codespace instance as shown below. -->
-<!---->
-<!-- ![Stop Codespaces](stop_cs.png) -->
-<!---->
 
 ## Local Setup 
 
