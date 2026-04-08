@@ -31,6 +31,7 @@ def minutely_interval_printer():
         print(f"data_interval_start : {start}")
         print(f"data_interval_end   : {end}")
         print(f"Window duration     : {duration_seconds:.0f} seconds")
+        # run script with data_time >= start and data_time < end
 
     print_interval()
 
