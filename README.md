@@ -1,5 +1,7 @@
 Code for [Airflow 3.0 Tutorial](https://www.startdataengineering.com/post/airflow-tutorial/)
 
+[![YouTube Live Workshop (April 11th 1:00 P.M. EST)](https://img.youtube.com/vi/38DHch4FxbU/0.jpg)](https://www.youtube.com/watch?v=38DHch4FxbU)
+
 ## Local Setup 
 
 **Prerequisites**
