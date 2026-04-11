@@ -7,7 +7,6 @@ import pendulum
 from airflow.sdk import dag, task
 import time
 
-
 @dag(
     dag_id="simple_etl",
     schedule="@daily",

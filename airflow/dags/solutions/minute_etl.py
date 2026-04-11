@@ -8,7 +8,7 @@ from airflow.sdk import dag, task
     schedule="@daily",
     start_date=datetime(2025, 1, 1),
     catchup=False,
-    tags=["exercise", "parallel"],
+    tags=["exercise", "parallel"]
 )
 def parallel_pipeline():
     """

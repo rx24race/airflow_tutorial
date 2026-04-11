@@ -32,6 +32,7 @@ def minutely_interval_printer():
         print(f"data_interval_end   : {end}")
         print(f"Window duration     : {duration_seconds:.0f} seconds")
         # run script with data_time >= start and data_time < end
+        # select * from source where created_at >= start and created_at < end
 
     print_interval()
 
