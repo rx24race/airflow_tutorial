@@ -43,8 +43,9 @@ ENV PYTHON_VERSION=3.13
 ENV CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-no-providers-${PYTHON_VERSION}.txt"
 
 RUN uv venv /home/airflow/.venv
+ENV PATH="/home/airflow/.venv/bin:$PATH"
 RUN uv pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
-RUN uv pip install jupyterlab pandas sqlalchemy psycopg2-binary apache-airflow-providers-postgres
+RUN uv pip install jupyterlab pandas sqlalchemy psycopg2-binary apache-airflow-providers-postgres pytest
 
 # Start Airflow Server
 COPY startup.sh /startup.sh

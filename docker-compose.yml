@@ -10,6 +10,7 @@ services:
       - "8888:8888"   # Jupyter Lab
     volumes:
       - ./airflow/dags:/home/airflow/dags
+      - ./tests:/home/airflow/tests
     environment:
       AIRFLOW__WEBSERVER__BASE_URL: "${AIRFLOW_BASE_URL:-http://localhost:8080}"
       AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX: "True"

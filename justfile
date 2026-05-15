@@ -14,3 +14,7 @@ down:
 restart:
   just down 
   just up
+
+# Run tests inside the Airflow container image
+test:
+    docker compose run --rm --build airflow-tutorial pytest
